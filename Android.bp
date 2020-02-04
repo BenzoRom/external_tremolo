@@ -28,7 +28,7 @@ cc_library {
             ],
             cflags: ["-D_ARM_ASSEM_"],
             // Assembly code in asm_arm.h does not compile with Clang.
-            clang_asflags: ["-no-integrated-as"],
+            clang_asflags: ["-no-integrated-as", "-mcpu=cortex-a53"],
 
             instruction_set: "arm",
         },
